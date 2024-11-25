@@ -76,5 +76,7 @@ Point your browser to the custom hostname. You should see the Cloudflare worker 
 - Take extra care when configuring CNAMES through the dashboard. If there's are routing errors, it will take a while for the routes to recover, even after fixing the errors.
 
 - Custom hostnames can be configured through the API. See this [blog post](https://blog.cloudflare.com/waf-for-saas/) for an example, or look for API URLs in the Custom Hostnames dashboard.
+![Screenshot 2024-11-25 at 18 51 00](https://github.com/user-attachments/assets/291bbe40-b8d0-40e5-8fbf-861741da6ca3)
+
 
 
