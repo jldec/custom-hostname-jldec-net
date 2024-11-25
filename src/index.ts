@@ -1,5 +1,6 @@
 export default {
   async fetch(request, env, ctx): Promise<Response> {
-    return new Response('Hello From jldec.net')
+    const headers = Object.fromEntries(request.headers.entries())
+    return Response.json(headers)
   },
 } satisfies ExportedHandler<Env>
