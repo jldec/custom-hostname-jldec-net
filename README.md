@@ -49,7 +49,7 @@ Custom domains need a "fallback origin" to serve the traffic.
 2. Create a CNAME target for customer routes pointing to the fallback origin as described in the [docs](https://developers.cloudflare.com/cloudflare-for-platforms/cloudflare-for-saas/start/getting-started/#2-optional-create-cname-target). This indirection will allow you to change the fallback origin later, without asking customers to update their DNS records.
 ![Screenshot 2024-11-25 at 16 59 21](https://github.com/user-attachments/assets/ed4816e6-26db-4f6b-ba30-264d56e4aa60)
 
-4. Navigate to `SSL/TLS > Custom Hostnames` and configure the fallback origin in the custom hostnames settings for the zone ().
+4. Navigate to `SSL/TLS > Custom Hostnames` and configure the fallback origin in the custom hostnames settings for the zone.
 ![Screenshot 2024-11-25 at 16 09 23](https://github.com/user-attachments/assets/55db20cd-27ad-4a00-a0de-adb818747781)
 
 ### Add custom hostnames
