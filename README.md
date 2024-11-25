@@ -61,7 +61,7 @@ These steps are documented [here](https://developers.cloudflare.com/cloudflare-f
 - Expand the new custom hostname entry, and look for the 2 TXT records used to validate the hostname and issue a certificate. Add the 2 TXT records to the customer's DNS zone for the domain.
 ![Screenshot 2024-11-25 at 16 20 23](https://github.com/user-attachments/assets/0b572ef4-4713-4980-8486-943b3f58d2db)
 
-- Finally, add a route for the custom hostname. This is a CNAME matching the custom hostname, pointing to the cname target created earlier. 
+- Finally, add a route for the custom hostname. This is a CNAME matching the custom hostname, pointing to the cname target created earlier.
 ![Screenshot 2024-11-25 at 16 48 00](https://github.com/user-attachments/assets/60864735-d9d1-4aab-a799-6f8ce08c263d)
 
 Back in your own SaaS zone, the custom hostname should be verified and the certificate issued.
@@ -70,4 +70,11 @@ Back in your own SaaS zone, the custom hostname should be verified and the certi
 ### Test
 Point your browser to the custom hostname. You should see the Cloudflare worker response.
 ![Screenshot 2024-11-25 at 16 57 52](https://github.com/user-attachments/assets/2f106ecd-52f1-49a7-8d20-b1fd4d1b9b7e)
+
+### PS
+
+- Take extra care when configuring CNAMES through the dashboard. If there's are routing errors, it will take a while for the routes to recover, even after fixing the errors.
+
+- Custom hostnames can be configured through the API. See this [blog post](https://blog.cloudflare.com/waf-for-saas/) for an example, or look for API URLs in the Custom Hostnames dashboard.
+
 
